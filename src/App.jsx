@@ -4,8 +4,8 @@ import ParticlesComponent from './components/particles.jsx'
 import Nav from './components/nav/nav.jsx'
 import Hero from './components/hero/hero.jsx'
 import About from './components/about/about.jsx'
-// import Carousel from './components/carousel/carousel.jsx'
-
+import Connectdots from './components/connectdots/connectdots.jsx'
+import Projects from './components/carousel/projects.tsx'
 
 
 function App() {
@@ -25,9 +25,10 @@ function App() {
       <About />
 
       {/* Carousel Section */}
-      {/* <Carousel /> */}
+      <Projects />
 
-
+       {/* Connectdots Section */}
+       <Connectdots />
 
       </div>
   );
