@@ -1,0 +1,62 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: none; /* Replace with your desired background color */
+    color: white;
+    position: relative; 
+    z-index: 20; /* above the particles */
+  }
+  
+  .hero-title {
+    color: white;
+    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 80px;
+    margin: 1 rem;
+  }
+  
+  .hero-subtitle {
+    color: white;
+    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+    font-size: 30px;
+    margin: 1 rem;
+    opacity: 0.8;
+  }
+  
+  .hero-subtitle2 {
+    color: white;
+    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    line-height: 70px;
+    text-align: right;
+    align-self: flex-end;
+    padding-right: 275px;
+    opacity: 0.8;
+  }
+
+  .hero-link {
+    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+    font-size: 30px;
+    color:white;
+    padding-top: 25px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-link:hover {
+    color:black;
+    
+  }
+  
+  .relative.z-20 {
+    position: relative;
+    z-index: 20;
+  }
+  
