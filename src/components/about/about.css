@@ -1,3 +1,7 @@
+section {
+  scroll-margin-top: 80px; /* Adjust to match the height of your navbar */
+}
+
 .about-section {
     display: flex;
     justify-content: center;
@@ -55,6 +59,9 @@
   }
   
   .btn {
+    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+    color: white;
+    text-decoration: none;
     padding: 10px 60px;
     align-items: center;
     background-color: black;

@@ -9,65 +9,65 @@ interface Project {
   title: string
   subTitle: string
   description: string
-  techStack: string[]
+  // techStack: string[]
   srcURL: string
   thumbnail: string
 }
 
 const projects: Project[] = [
   {
-    title: "PassGen",
-    subTitle: "Generate secure passwords easily",
+    title: "BluePrint",
+    subTitle: "Hospital Policy Chatbot",
     description:
-      "PassGen is a Python CLI tool for generating secure, random passwords from the command line. It allows you to easily create strong and unique passwords for your accounts.",
-    techStack: ["Python"],
+      "A hospital policy chatbot that allows staff to quickly find and reference hospital policies by asking questions, improving efficiency and compliance.",
+    // techStack: ["Python"],
     srcURL: "https://github.com/example/passgen",
     thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
   },
   {
-    title: "Project Manager",
-    subTitle: "Track your projects efficiently",
+    title: "Shelf Sense",
+    subTitle: "Hospital Supply Item Locator",
     description:
-      "A full-featured project management tool built with React and Node.js. Manage tasks, track progress, and collaborate with team members.",
-    techStack: ["React", "Node.js", "MongoDB"],
+      "A voice-activated hospital supply locator that helps nurses find items quickly using a variety of intuitive inputs, reducing time spent searching for critical supplies.",
+    // techStack: ["React", "Node.js", "MongoDB"],
     srcURL: "https://github.com/example/project-manager",
-    thumbnail: "/placeholder.svg?height=150&width=300",
+    thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
   },
   {
-    title: "E-commerce Platform",
-    subTitle: "Modern online shopping experience",
+    title: "Vein Finder",
+    subTitle: "lorem ipsum",
     description:
-      "A scalable e-commerce platform built with Next.js and Stripe integration. Features include product listings, cart functionality, and secure checkout.",
-    techStack: ["Next.js", "React", "Stripe", "MongoDB"],
+      "A DIY device designed to enhance vein visibility for IV access.",
+    // techStack: ["Next.js", "React", "Stripe", "MongoDB"],
     srcURL: "https://github.com/example/ecommerce-platform",
-    thumbnail: "/placeholder.svg?height=150&width=300",
+    thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
   },
   {
-    title: "Weather App",
-    subTitle: "Real-time weather forecasts",
+    title: "RNsight",
+    subTitle: "Nurse pay transparency website",
     description:
-      "A responsive weather application that provides real-time forecasts and weather data for locations worldwide. Built with React and integrates with a weather API.",
-    techStack: ["React", "API Integration", "CSS3"],
+      "A nurse pay transparency platform where nurses can anonymously share and compare salaries, promoting pay equity and informed career decisions.",
+    // techStack: ["React", "API Integration", "CSS3"],
     srcURL: "https://github.com/example/weather-app",
-    thumbnail: "/placeholder.svg?height=150&width=300",
+    thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
   },
   {
-    title: "Task Tracker",
-    subTitle: "Streamline your daily tasks",
+    title: "Virtual Reality Patient De-escalation",
+    subTitle: "lorem ipsum",
     description:
-      "A simple yet powerful task tracking application. Users can add, delete, and mark tasks as complete. Built with Vue.js and uses local storage for data persistence.",
-    techStack: ["Vue.js", "JavaScript", "CSS3"],
+      "An immersive virtual reality training tool that helps healthcare staff practice patient de-escalation techniques with real-time AI feedback.",
+    // techStack: ["Vue.js", "JavaScript", "CSS3"],
     srcURL: "https://github.com/example/task-tracker",
-    thumbnail: "/placeholder.svg?height=150&width=300",
+    thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
   },
   {
-    title: "Portfolio Website",
-    subTitle: "Showcase your work beautifully",
+    title: "ECG Rhythm Interpretation",
+    subTitle: "lorem ipsum",
     description:
-      "A customizable portfolio website template for developers and designers. Built with Gatsby for fast performance and easy content management.",
-    techStack: ["Gatsby", "React", "GraphQL"],
+      "A digital at-home device designed to assist patients in recognizing ECG rhythm changes through predictive analysis.",
+    // techStack: ["Gatsby", "React", "GraphQL"],
     srcURL: "https://github.com/example/portfolio-website",
-    thumbnail: "/placeholder.svg?height=150&width=300",
+    thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
   },
 ]
 
@@ -84,7 +84,7 @@ export default function Projects() {
     if (!isPaused) {
       const timer = setTimeout(() => {
         setRotation((prev) => prev + rotationAmt)
-      }, 5000)
+      }, 15000)
       return () => clearTimeout(timer)
     }
   }, [isPaused, rotationAmt])
@@ -94,8 +94,8 @@ export default function Projects() {
   }
 
   return (
-    <section className="carousel-section">
-      <h2 className="featured-projects">Featured Projects</h2>
+    <section className="carousel-section" id="featured-projects">
+      <h2 className="featured-projects text-outline">FEATURED PROJECTS</h2>
       <div className="carousel-wrapper">
         <div
           className="carousel-content"
@@ -152,31 +152,28 @@ function ProjectCard({
         <img src={project.thumbnail || "/placeholder.svg"} alt={project.title} className="project-thumbnail" />
       </div>
       <div className="project-content">
-        <h5 className="font-bold text-lg">{project.title}</h5>
-        <p className="text-sm text-gray-600">{project.subTitle}</p>
-        <p className="mt-2 text-sm project-description">{project.description}</p>
+        <h5 className="title">{project.title}</h5>
+        <h5 className="subtitle">{project.subTitle}</h5>
+        <p className="project-description">{project.description}</p>
         <div className="mt-4 flex gap-2 flex-wrap">
-          {project.techStack.map((tech, i) => (
-            <span
-              key={i}
-              className="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full hover:bg-gray-300 transition-colors"
-            >
-              {tech}
-            </span>
-          ))}
+          {/* {project.techStack.map((tech, i) => ( */}
+            {/* <span */}
+              {/* key={i} */}
+              {/* className="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full hover:bg-gray-300 transition-colors" */}
+            {/* > */}
+              {/* {tech} */}
+            {/* </span> */}
+          {/* ))} */}
         </div>
-        <div className="mt-4 flex justify-end gap-2">
-          <a
-            href={project.srcURL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 text-sm bg-[#68d372] text-white rounded-full hover:bg-[#5bc164] transition-colors"
-          >
+        <div className="bottom-button-container">
+          <a href={project.thumbnail} className="glow-on-hover" target="_blank" rel="noopener noreferrer">
             View Project
+          </a>
+          <a href={project.srcURL} className="bottom-button" target="_blank" rel="noopener noreferrer">
+            View Source Code
           </a>
         </div>
       </div>
     </Card>
   )
 }
-

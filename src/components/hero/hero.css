@@ -60,3 +60,17 @@
     z-index: 20;
   }
   
+  /* Style for the typewriter word */
+.typewriter-effect {
+  font-weight: bold;
+  color: #ffcc00; /* Highlight color */
+  border-right: 2px solid #ffcc00; /* Cursor effect */
+  animation: blink 0.7s step-end infinite; /* Blinking cursor */
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

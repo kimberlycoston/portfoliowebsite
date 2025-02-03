@@ -8,7 +8,7 @@
     background-color: none; /* Optional: Light background for contrast */
     position: relative;
     z-index: 10;
-    margin-top:-1000px;
+    
   }
   
   .about-title-container {
@@ -17,7 +17,8 @@
   }
   
   .about-title2 {
-    font-size: 66px;
+    margin-top: 0px;
+    font-size: 60px;
     text-align: left;
     align-self: flex-start;
     font-family: 'Antonio', sans-serif; /* Keep font consistent */
@@ -26,8 +27,8 @@
   }
   
   .about-title3 {
-    margin-top: 450px;
-    font-size: 66px;
+    margin-top: 0px;
+    font-size: 60px;
     text-align: right;
     align-self: flex-end;
     font-family: 'Antonio', sans-serif; /* Keep font consistent */
