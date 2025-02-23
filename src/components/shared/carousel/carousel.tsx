@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useCallback, useEffect } from "react"
+import React, { useState, useCallback, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Card } from "../ui/carousel-card"
 import "./carousel.css"

@@ -21,6 +21,8 @@ html {
   font-family: 'Antonio', sans-serif; /* or 'Oswald' */
   color: transparent;
   -webkit-text-stroke: 1px white; /* Adjust stroke width and color as needed */
+  padding: none;
+  margin: none;
 }
 
 

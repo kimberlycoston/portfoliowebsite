@@ -2,10 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ParticlesComponent from "./components/particles.jsx";
 import Nav from "./components/shared/nav/nav.jsx";
 import Hero from "./components/homepage/hero/hero.jsx";
-import About from "./components/homepage/about/about.jsx";
+import About from "./components/about/about.jsx";
 import Connectdots from "./components/homepage/connectdots/connectdots.jsx";
 import Carousel from "./components/shared/carousel/carousel.tsx";
-import PortfolioPage from "./components/projectpage/projectpage.tsx"; // Import the PortfolioPage
+import PortfolioPage from "./components/portfolio/portfoliopage.jsx"; // Portfolio page
+import PortfolioHeader from "./components/portfolio/portfolioheader";
+
 
 function App() {
   return (
@@ -14,31 +16,35 @@ function App() {
         {/* Particles Background */}
         <ParticlesComponent id="particles" />
 
-        {/* Add Nav component */}
+        {/* Navigation Bar */}
         <Nav />
 
         <Routes>
-          {/* Define routes for different pages */}
+          {/* Home Route */}
           <Route
             path="/"
             element={
               <>
-                {/* Hero Section */}
                 <Hero />
-
-                {/* About Section */}
-                <About />
-
-                {/* Carousel Section */}
                 <Carousel />
-
-                {/* Connectdots Section */}
                 <Connectdots />
               </>
             }
           />
-          {/* Add route for the portfolio page */}
-          <Route path="/portfolio" element={<PortfolioPage />} />
+
+          {/* About Route */}
+          <Route path="/about" element={<About />} />
+      
+          {/* Portfolio Route - Only PortfolioPage here, it includes the header */}
+          <Route
+            path="/portfolio"
+            element={
+              <>
+                <PortfolioHeader />
+                <PortfolioPage />
+              </>
+          }
+          />
         </Routes>
       </div>
     </Router>

@@ -5,7 +5,7 @@ section {
 
 .carousel-section {
     min-height: 90vh;
-    margin-top: 5rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,8 +31,16 @@ section {
     text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8); /* Glowing effect */
     backface-visibility: hidden;
   }
+
+  .featured-projects text-outline {
+    padding-bottom: none;
+    height:auto;
+    margin-bottom: 10px;
+  }
   
   .carousel-wrapper {
+    padding-top: 0; /* Reduce or remove top padding */
+    margin-top: -50px; /* Adjust this value to decrease the space */
     perspective: 100em;
     perspective-origin: 50% 50%;
     display: flex;
@@ -40,9 +48,9 @@ section {
     align-items: center;
     position: relative;
     overflow: visible;
-    margin-top: -30px;
+    padding: none;
     width: 100%;
-    height: 600px;
+    height: 500px;
   }
   
   .carousel-content {
@@ -83,9 +91,9 @@ section {
   
   .carousel-nav {
     position: absolute;
-    bottom: 2rem;
     display: flex;
     gap: 10px;
+    bottom: 1px;
     cursor: pointer;
   }
   
