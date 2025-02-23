@@ -9,7 +9,8 @@ const About = () => {
         <div className="about-container">
           <div className="about-image">
             <img
-              src="/src/assets/headshot.png" // Replace with your image path
+              #src="/src/assets/headshot.png" // Replace with your image path
+              src="/headshot.png"
               alt="Headshot"
             />
           </div>
