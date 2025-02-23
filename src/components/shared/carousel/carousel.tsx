@@ -28,7 +28,7 @@ const projects: Project[] = [
     title: "Shelf Sense",
     subTitle: "Hospital Supply Item Locator",
     description:
-      "A voice-activated hospital supply locator that helps nurses find items quickly using a variety of intuitive inputs, reducing time spent searching for critical supplies.",
+      "A voice-activated hospital supply locator that helps nurses find items quickly using a variety of intuitive inputs.",
     // techStack: ["React", "Node.js", "MongoDB"],
     srcURL: "https://github.com/example/project-manager",
     thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
@@ -52,7 +52,7 @@ const projects: Project[] = [
     thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
   },
   {
-    title: "Virtual Reality Patient De-escalation",
+    title: "AI/VR De-escalation Training for Nurses",
     subTitle: "lorem ipsum",
     description:
       "An immersive virtual reality training tool that helps healthcare staff practice patient de-escalation techniques with real-time AI feedback.",
@@ -64,7 +64,7 @@ const projects: Project[] = [
     title: "ECG Rhythm Interpretation",
     subTitle: "lorem ipsum",
     description:
-      "A digital at-home device designed to assist patients in recognizing ECG rhythm changes through predictive analysis.",
+      "An at-home device designed to recognize ECG rhythm changes through predictive analysis.",
     // techStack: ["Gatsby", "React", "GraphQL"],
     srcURL: "https://github.com/example/portfolio-website",
     thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
