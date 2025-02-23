@@ -1,37 +1,48 @@
-import { useState } from 'react'
-import './App.css'
-import ParticlesComponent from './components/particles.jsx'
-import Nav from './components/nav/nav.jsx'
-import Hero from './components/hero/hero.jsx'
-import About from './components/about/about.jsx'
-import Connectdots from './components/connectdots/connectdots.jsx'
-import Projects from './components/carousel/projects.tsx'
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ParticlesComponent from "./components/particles.jsx";
+import Nav from "./components/shared/nav/nav.jsx";
+import Hero from "./components/homepage/hero/hero.jsx";
+import About from "./components/homepage/about/about.jsx";
+import Connectdots from "./components/homepage/connectdots/connectdots.jsx";
+import Carousel from "./components/shared/carousel/carousel.tsx";
+import PortfolioPage from "./components/projectpage/projectpage.tsx"; // Import the PortfolioPage
 
 function App() {
-  const [count, setCount] = useState(0)
   return (
-    <div className="App">
-      {/* Particles Background */}
-      <ParticlesComponent id="particles" />
+    <Router>
+      <div className="App">
+        {/* Particles Background */}
+        <ParticlesComponent id="particles" />
 
-      {/* Add Nav component */}
-      <Nav /> 
+        {/* Add Nav component */}
+        <Nav />
 
-      {/* Hero Section */}
-      <Hero />
+        <Routes>
+          {/* Define routes for different pages */}
+          <Route
+            path="/"
+            element={
+              <>
+                {/* Hero Section */}
+                <Hero />
 
-      {/* About Section */}
-      <About />
+                {/* About Section */}
+                <About />
 
-      {/* Carousel Section */}
-      <Projects />
+                {/* Carousel Section */}
+                <Carousel />
 
-       {/* Connectdots Section */}
-       <Connectdots />
-
+                {/* Connectdots Section */}
+                <Connectdots />
+              </>
+            }
+          />
+          {/* Add route for the portfolio page */}
+          <Route path="/portfolio" element={<PortfolioPage />} />
+        </Routes>
       </div>
+    </Router>
   );
-  }
+}
 
 export default App;

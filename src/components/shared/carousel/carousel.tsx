@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { Card } from "../ui/card"
+import { Card } from "../ui/carousel-card"
 import "./carousel.css"
 
 interface Project {
