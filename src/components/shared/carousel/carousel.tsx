@@ -95,7 +95,8 @@ export default function Projects() {
 
   return (
     <section className="carousel-section" id="featured-projects">
-      <h2 className="featured-projects text-outline">FEATURED PROJECTS</h2>
+      <h2 className="featured-projects">featured projects</h2>
+      {/* <h2 className="featured-projects text-outline">featured projects</h2> */}
       <div className="carousel-wrapper">
         <div
           className="carousel-content"

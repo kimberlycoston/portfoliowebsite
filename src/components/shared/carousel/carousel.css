@@ -11,18 +11,20 @@ section {
     align-items: center;
     position: relative;
     z-index: 20;
-    padding-top: 4rem;
+    padding-top: rem;
   }
 
   .featured-projects {
     font-size: 2rem;
     font-weight: bold;
+    color: white;
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
     font-size: 38px;
     position: relative;
     z-index: 20;
-    background-color: transparent;
-    transition: color 0.6s ease-in-out, text-shadow 0.6s ease-in-out;
+    padding-bottom: 10px;
+    /* background-color: transparent; */
+    /* transition: color 0.6s ease-in-out, text-shadow 0.6s ease-in-out; */
   }
 
   .featured-projects:hover {
@@ -31,12 +33,12 @@ section {
     text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8); /* Glowing effect */
     backface-visibility: hidden;
   }
-
-  .featured-projects text-outline {
-    padding-bottom: none;
-    height:auto;
-    margin-bottom: 10px;
-  }
+  
+  /* .featured-projects text-outline { */
+    /* padding-bottom: none; */
+    /* height:auto; */
+    /* margin-bottom: 10px; */
+  /* } */
   
   .carousel-wrapper {
     padding-top: 0; /* Reduce or remove top padding */
