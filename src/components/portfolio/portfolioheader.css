@@ -56,11 +56,11 @@
   }
 
   /* From Uiverse.io by m1her */ 
-/* 
+
 .radio-button-container {
   padding-right: 3rem;
   margin-top: -100px;
-} */
+}
 
 .radio-input {
   display: flex;
@@ -124,8 +124,10 @@
 }
 
 .label .text {
-  color: black;
-  font-size: 15px;
+  color: whitesmoke;
+  font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+
+  font-size: 12px;
   line-height: 12px;
   padding: 2px;
   text-align: center;

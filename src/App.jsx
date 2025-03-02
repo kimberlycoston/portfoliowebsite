@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ParticlesComponent from "./components/particles.jsx";
 import Nav from "./components/shared/nav/nav.jsx";
-import Footer from "./components/shared/footer/footer.jsx";
+// import Footer from "./components/shared/footer/footer.jsx";
 import Hero from "./components/homepage/hero/hero.jsx";
 import About from "./components/about/about.jsx";
 import Connectdots from "./components/homepage/connectdots/connectdots.jsx";
@@ -47,7 +47,7 @@ function App() {
           }
           />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
