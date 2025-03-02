@@ -5,13 +5,12 @@ section {
 
 .carousel-section {
     min-height: 90vh;
-
+    overflow: visible;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     z-index: 20;
-    padding-top: rem;
   }
 
   .featured-projects {
@@ -49,8 +48,8 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: visible;
-    padding: none;
+    /* overflow: hidden; */
+    padding-bottom: 20px;
     width: 100%;
     height: 500px;
   }
@@ -72,12 +71,16 @@ section {
     border-radius: 8px;
     padding: 1rem;
     width: 300px;
-    height: 400px;
+    height: 410px;
     position: absolute;
     transition: filter 0.2s ease, box-shadow 0.2s ease;
     backface-visibility: visible;
-    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
+    display: flex;
+
   }
   
   .project-card.focused {
@@ -95,18 +98,18 @@ section {
     position: absolute;
     display: flex;
     gap: 10px;
-    bottom: 1px;
+    bottom: -10px;
     cursor: pointer;
   }
   
   .nav-dot {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     background: #fff;
     border: 0px solid rgba(34, 34, 34, 0.45);
     border-radius: 50%;
     transition: all 0.4s ease;
-    padding: 0;
+    padding: none;
   }
   
   .nav-dot.focused {
@@ -144,16 +147,17 @@ section {
   
   .project-thumbnail {
     width: 100%;
-    height: 450px;
-    object-fit: cover;
+    height: 150px;
+    object-fit: contain;
     object-position: center;
+    margin-top: none;
   }
   
   .thumbnail-container {
-    overflow: hidden;
-    height: 400px;
+    overflow: visible;
+    height: auto;
     border-radius: 8px;
-    margin-bottom: 0;
+    margin-bottom: -10px;
   }
   
   .project-content {
@@ -168,26 +172,6 @@ section {
     margin-top: -10px;
   }
   
-  @media (max-width: 768px) {
-    .carousel-section {
-      margin-top: 2rem;
-    }
-    .carousel-nav {
-      bottom: 0.5rem;
-    }
-    .project-card {
-      width: 250px;
-      height: 350px;
-    }
-    .carousel-arrow.left {
-      left: 20px;
-    }
-    .carousel-arrow.right {
-      right: 20px;
-    }
-  }
-  
-
   .title {
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
     color: black;
@@ -210,12 +194,15 @@ section {
 
 /* CSS */
 /* Ensure the button container uses flexbox */
-/* Ensure the button container uses flexbox */
 .bottom-button-container {
     display: flex; /* Arrange children in a row */
     gap: 16px; /* Add space between buttons */
     justify-content: center; /* Align buttons to the left (or change to center/right as needed) */
-    margin-top: px; /* Add space above the button container */
+    margin-top: auto; /* Add space above the button container */
+    padding-bottom: 10px;
+    width: 100%;
+    flex-wrap: nowrap;
+    position: relative;
   }
   
   /* Style the buttons */
@@ -300,3 +287,47 @@ section {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
+
+/* @media (max-width: 900px) {
+  html, body {
+    overflow-x: hidden; Prevents horizontal scrolling only on mobile 
+    width: 100vw;  Ensures viewport stays fixed 
+}
+   .project-card {
+      width: 250px;  Adjust for mobile */
+      /* height: 500px;  Reduce size for better fit 
+  } 
+   .project-thumbnail {
+      max-height: 150px;  Ensure thumbnails scale down 
+  } 
+   .bottom-button-container {
+      flex-direction: column;  Stack buttons on smaller screens 
+      gap: 5px;
+      margin-top: auto;
+  } 
+  .bottom-button {
+      max-width: 50%;  Make buttons take full width on mobile
+      text-align: center;
+  } 
+  /* .carousel-section {
+    margin-top: 2rem;
+    min-height: 70vh
+    display: center;
+  }
+  .carousel-nav {
+    bottom: -4rem;
+  }
+  .carousel-arrow.left {
+    display: none !important;
+  }
+  .carousel-arrow.right {
+    display: none !important;
+  }
+  .project-description {
+    font-size: auto;
+  }
+  .featured-projects {
+    padding-bottom: 50px;
+  }
+} */

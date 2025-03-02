@@ -17,57 +17,57 @@ interface Project {
 const projects: Project[] = [
   {
     title: "BluePrint",
-    subTitle: "Hospital Policy Chatbot",
+    subTitle: "Retrieval Augmented Generation | Full-stack Development | Database Management",
     description:
       "A hospital policy chatbot that allows staff to quickly find and reference hospital policies by asking questions, improving efficiency and compliance.",
     // techStack: ["Python"],
     srcURL: "https://github.com/example/passgen",
-    thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
+    thumbnail: "/src/assets/project_card_images/coming_soon.png",
   },
   {
     title: "Shelf Sense",
-    subTitle: "Hospital Supply Item Locator",
+    subTitle: "Database Management | Full-stack Development | Cloud Integration",
     description:
       "A voice-activated hospital supply locator that helps nurses find items quickly using a variety of intuitive inputs.",
     // techStack: ["React", "Node.js", "MongoDB"],
     srcURL: "https://github.com/example/project-manager",
-    thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
+    thumbnail: "/src/assets/project_card_images/coming_soon.png",
   },
   {
     title: "Vein Finder",
-    subTitle: "lorem ipsum",
+    subTitle: "Light & Optics Experimentation | Rapid Prototyping | Arduino Development",
     description:
       "A DIY device designed to enhance vein visibility for IV access.",
     // techStack: ["Next.js", "React", "Stripe", "MongoDB"],
     srcURL: "https://github.com/example/ecommerce-platform",
-    thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
+    thumbnail: "/src/assets/project_card_images/vein_finder4.png",
   },
   {
     title: "RNsight",
-    subTitle: "Nurse pay transparency website",
+    subTitle: "UX/UI Design | Web development | User research",
     description:
       "A nurse pay transparency platform where nurses can anonymously share and compare salaries, promoting pay equity and informed career decisions.",
     // techStack: ["React", "API Integration", "CSS3"],
     srcURL: "https://github.com/example/weather-app",
-    thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
+    thumbnail: "/src/assets/project_card_images/RNsight_1.png",
   },
   {
     title: "AI/VR De-escalation Training for Nurses",
-    subTitle: "lorem ipsum",
+    subTitle: "LLM application | Project Management | User Research",
     description:
-      "An immersive virtual reality training tool that helps healthcare staff practice patient de-escalation techniques with real-time AI feedback.",
+      "A VR training tool that helps healthcare staff practice patient de-escalation techniques with real-time AI feedback.",
     // techStack: ["Vue.js", "JavaScript", "CSS3"],
     srcURL: "https://github.com/example/task-tracker",
-    thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
+    thumbnail: "/src/assets/project_card_images/VR_demo1.jpg",
   },
   {
     title: "ECG Rhythm Interpretation",
-    subTitle: "lorem ipsum",
+    subTitle: "Machine Learning | Edge Computing | Data Preprocessing",
     description:
       "An at-home device designed to recognize ECG rhythm changes through predictive analysis.",
     // techStack: ["Gatsby", "React", "GraphQL"],
     srcURL: "https://github.com/example/portfolio-website",
-    thumbnail: "/src/assets/project_card_images/jumprope_1.svg?height=25&width=50",
+    thumbnail: "/src/assets/project_card_images/ECG_1.png",
   },
 ]
 
@@ -170,7 +170,7 @@ function ProjectCard({
           <a href={project.thumbnail} className="glow-on-hover" target="_blank" rel="noopener noreferrer">
             View Project
           </a>
-          <a href={project.srcURL} className="bottom-button" target="_blank" rel="noopener noreferrer">
+          <a href={project.srcURL} className="glow-on-hover" target="_blank" rel="noopener noreferrer">
             View Source Code
           </a>
         </div>

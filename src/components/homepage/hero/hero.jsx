@@ -39,8 +39,14 @@ const Hero = () => {
             className="hero-text designer-text"
             style={{ opacity: dividerPosition > 20 ? 1 : 0, transition: 'opacity 0.3s ease' }}
           >
-            designer
+            creator
           </div>
+          <p
+            className="hero-description designer-description"
+            style={{ opacity: dividerPosition > 20 ? 1 : 0, transition: 'opacity 0.3s ease' }}
+          >
+            Building AI-driven tools and innovative healthcare solutions.
+          </p>
         </div>
         <div
           className="hero-image-wrapper"
@@ -50,7 +56,7 @@ const Hero = () => {
           }}
         >
           <img
-            src="/nurse_headshot_right.png"
+            src="/nurse_right_update.png"
             alt="Nurse Headshot"
             className="hero-image"
           />
@@ -60,6 +66,12 @@ const Hero = () => {
           >
             nurse
           </div>
+          {/* <p
+            className="hero-description nurse-description"
+            style={{ opacity: dividerPosition < 80 ? 1 : 0, transition: 'opacity 0.3s ease' }}
+          >
+            Critical care nurse dedicated to improving patient experiences.
+          </p> */}
         </div>
       </div>
     </div>

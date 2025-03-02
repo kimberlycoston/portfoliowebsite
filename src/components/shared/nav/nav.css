@@ -9,7 +9,7 @@ nav {
 
   nav.scrolled {
     background-color: #9c36eb; /* Opaque when scrolled */
-    height: 84px;
+    height: 100px;
     mask-image: linear-gradient(
         90deg,
         rgba(255, 255, 255, 0) 0%,   /* Fully transparent at 0% */

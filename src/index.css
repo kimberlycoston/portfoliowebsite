@@ -8,6 +8,13 @@ html {
   background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
 }
 
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100w;
+  padding: 0;
+}
+
 #particles {
   position: absolute;
   top: 0;

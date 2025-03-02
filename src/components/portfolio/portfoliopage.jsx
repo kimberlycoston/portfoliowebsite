@@ -5,49 +5,49 @@ import "./portfoliopage.css";
 
 const projects = [
   {
-    title: "My UI design book",
+    title: "BluePrint",
     category: "Book",
-    image: "https://via.placeholder.com/300",
+    image: "/src/assets/project_card_images/coming_soon.png",
   },
   {
-    title: "Creating a lean design system",
+    title: "Shelf Sense",
     category: "Design system",
-    image: "https://via.placeholder.com/300",
+    image: "/src/assets/project_card_images/coming_soon.png",
   },
   {
-    title: "Interior design news feed",
+    title: "Vein Finder",
     category: "Side project",
-    image: "https://via.placeholder.com/300",
+    image: "/src/assets/project_card_images/vein_finder1.png",
   },
   {
-    title: "Qantas map search",
+    title: "RNsight",
     category: "Product design",
-    image: "https://via.placeholder.com/300",
+    image: "/src/assets/project_card_images/RNsight_1.png",
   },
   {
-    title: "Qantas homepage refresh",
+    title: "AI/VR De-esclation Training for Nurses",
     category: "Website design",
-    image: "https://via.placeholder.com/300",
+    image: "/src/assets/project_card_images/VR_demo1.jpg",
   },
   {
-    title: "Rethinking flight search",
+    title: "ECG Rhythm Interpretation",
     category: "Speaking event",
-    image: "https://via.placeholder.com/300",
+    image: "/src/assets/project_card_images/ECG_1.png",
   },
   {
-    title: "Qantas map search",
+    title: "Exploring the Future of Education",
     category: "Product design",
-    image: "https://via.placeholder.com/300",
+    image: "/src/assets/project_card_images/coming_soon.png",
   },
   {
-    title: "Qantas homepage refresh",
+    title: "Exploring the Future of Education: Pt II",
     category: "Website design",
-    image: "https://via.placeholder.com/300",
+    image: "/src/assets/project_card_images/coming_soon.png",
   },
   {
-    title: "Rethinking flight search",
+    title: "Nurse Automated Self-Scheduling",
     category: "Speaking event",
-    image: "https://via.placeholder.com/300",
+    image: "/src/assets/project_card_images/coming_soon.png",
   },
 ];
 

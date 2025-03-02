@@ -2,14 +2,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
-    padding: 50px 80px;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
+    padding: 50px 80px 50px;
+    backdrop-filter: blur(1px);
+    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+    color: white;
+    position: relative;
+    min-height: 400px;
   }
   
   .headliner-content {
     max-width: 600px;
+    padding: 0 3rem 0;
   }
   
   .headliner h1 {
@@ -17,25 +20,141 @@
     font-weight: 900;
     color: #333;
     margin: 0;
+    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+    color: white;
   }
   
   .headliner h1 span {
-    color: #9c36eb;
+    color: white;
+    
   }
   
   .headliner p {
     font-size: 20px;
-    color: #666;
     margin-top: 10px;
+    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+    color: white;
   }
   
   .headliner .subtext {
     font-size: 16px;
-    color: #888;
     line-height: 1.5;
+    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+    color: whitesmoke;
   }
   
-  
+  .skewed {
+    position: relative;
+    width: 100%;
+    height: .55px; /* Adjust height as needed */
+    background-color: white; /* Adjust color to match your design */
+    background: linear-gradient(to top, transparent, #8e44ad);
+    transform-origin: bottom;
+    top: -100px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+    /* clip-path: polygon(0 80px,100% 0,100% 100%,0 100%); */
+  }
 
-  
+  /* From Uiverse.io by m1her */ 
+/* 
+.radio-button-container {
+  padding-right: 3rem;
+  margin-top: -100px;
+} */
+
+.radio-input {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 70px;
+}
+
+.radio-input input {
+  display: none;
+}
+
+.radio-input .label {
+  width: 70px;
+  height: 50px;
+  background-color: #2a2a2a;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 6px;
+  border-top: 1px solid #383838;
+  transition: all 0.1s linear;
+  position: relative;
+  z-index: 2;
+}
+
+.label .back-side {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  background-color: #2a2a2a;
+  border-radius: 4px 4px 2px 2px;
+  width: 100%;
+  height: 14px;
+  box-shadow:
+    inset 0 5px 3px 1px rgba(0, 0, 0, 0.5),
+    inset 0px -5px 2px 0px rgba(56, 163, 224, 0.1);
+  transform: perspective(300px) rotateX(50deg);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.1s linear;
+}
+
+.label:has(input[type="radio"]:checked) .back-side {
+  opacity: 1;
+}
+
+.label:has(input[type="radio"]:checked) {
+  transform: perspective(200px) rotateX(-18deg);
+  transform-origin: 50% 40%;
+  box-shadow: inset 0px -20px 15px 0px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid #8e44ad;
+  margin-top: 6px;
+  border-radius: 0 0 4px 4px;
+}
+
+.label .text {
+  color: black;
+  font-size: 15px;
+  line-height: 12px;
+  padding: 2px;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all 0.1s linear;
+  text-shadow: -1px -1px 1px rgb(224, 224, 224, 0.1);
+}
+
+.label input[type="radio"]:checked + .text {
+  color: #8e44ad;
+  text-shadow:
+    0px 0px 8px #8e44ad,
+    1px 1px 2px rgb(0, 0, 0, 1);
+}
+
+.label .bottom-line {
+  width: 100%;
+  height: 4px;
+  border-radius: 999px;
+  background-color: #2a2a2a;
+  box-shadow: 0 0 3px 0px rgb(19, 19, 19);
+  border-top: 1px solid #383838;
+  transition: all 0.1s linear;
+}
+
+.label:has(input[type="radio"]:checked) .bottom-line {
+  background-color: #1a1a1a;
+  border-top: 1px solid #8e44ad;
+}
+
   

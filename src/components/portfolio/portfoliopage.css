@@ -5,12 +5,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-columns: repeat(3, 1fr); /* Max of three cards per row */
-  gap: 20px;
+  gap: 25px;
   scroll-margin-block-start: 50px;
-
-  padding: 10rem;
+  padding: 0 8rem 3rem;
   position: relative;
-  z-index: 50;
+  bottom: 50px;
+  z-index: 20;
   min-height: 100vh;
   background-color: transparent; /* Transparent background */
   width: 100%;
@@ -21,43 +21,58 @@
 .portfolio-card {
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow: hidden;
   transition: box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  height: 200px; /* Reduced height for the card */
+  height: 300px; /* Reduced height for the card */
+  z-index: 10;
 }
 
 .portfolio-card:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive image with adjusted height */
 .portfolio-image {
-  width: 100%;
-  height: 150px; /* Reduced image height */
+  width: calc(100% - 5px); /* Keeps the width inside the padding */
+  height: 200px;
+  padding: 5px 5px 0;
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect total width */
 }
+
 
 /* Responsive details */
 .portfolio-details {
-  padding: 0.75rem;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+  color: black;
 }
 
 /* Responsive text */
 .portfolio-title {
+  font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+  color: black;
   font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 2px;
+  margin-top: 1px;
 }
 
 .portfolio-category {
   font-size: 0.85rem;
-  color: #6b7280;
+  color: gray;
+  font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+  margin-top: 2px;
+  padding-bottom: 5px;
 }
 
 /* Media queries for responsiveness */

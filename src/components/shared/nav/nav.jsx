@@ -18,11 +18,17 @@ function Nav() {
 
   return (
     <nav>
+      {/* Hamburger Button for Mobile */}
+      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </div>
+
+      {/* Navigation Menu */}
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a href="https://drive.google.com/file/d/1e4_0sJroot_Mt_LRlIxCP5WQU5W2ZWPd/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
       </ul>
     </nav>
   );
