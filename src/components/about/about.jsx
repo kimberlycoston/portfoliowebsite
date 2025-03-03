@@ -16,28 +16,19 @@ const About = () => {
           <div className="about-text">
             <h1 className="about-title text-outline">ABOUT ME</h1>
             <p>
-              I am a critical care nurse with a keen eye for systemic
-              inefficiencies and a heart for innovation. Healthcare colleagues
-              often remark on my unconventional approach – “Why not computer
-              science?” “Engineering seems more your thing.” “You’re a natural
-              entrepreneur.” But the most probing question I grapple with is,
-              “Why are you a nurse?” While my responses have often been
-              lighthearted deflections, they masked my growing realization: my
-              true passion lies at the intersection of healthcare and
-              innovation. Confronted daily with the challenges and intricacies
-              of patient care, I’ve developed a deep understanding of its
-              inner workings and, more importantly, its potential for
-              transformative change.
+            I am a critical care nurse and design engineer-in-training passionate about bridging the gap between healthcare and technology. My career began at the bedside, where I saw firsthand the inefficiencies that impact both patients and providers. Rather than accepting these challenges as the norm, I sought solutions—turning frustration into innovation.
             </p>
             <p>
-              My path isn’t the traditional route to engineering; it’s been
-              paved with real-life experiences and self-taught skills. From
-              creating small-scale solutions to improve patient care to
-              conceptualizing larger systemic changes, my nursing background
-              has catalyzed my engineering aspirations. Each day in the
-              hospital has fueled my desire to blend the empathy and insight
-              gained from nursing with the innovative potential of design
-              engineering.
+            Now, as a Master’s of Engineering student in Design & Technology Innovation at Duke, I’m expanding my ability to design scalable solutions that aimpactful, user-centered solutions. My unconventional path has fueled a unique perspective: I don’t just develop technology for healthcare—I design with nurses, for nurses. Each project I take on stems from real clinical pain points, aiming to improve workflow, accessibility, and patient outcomes.
+            </p>
+            <p> 
+            I believe that true innovation happens when technology serves its users—not the other way around. 
+            </p>
+            <p>
+            My work lives at the intersection of design, healthcare, and strategic innovation. I believe that truly effective solutions are those that not only improve day-to-day workflow but also align with institutional priorities—ensuring adoption, scalability, and lasting impact. 
+            </p>
+            <p> 
+            At my core, I am driven by the idea that better design leads to better care, and I am committed to building solutions that streamline processes, reduce inefficiencies, and empower healthcare workers—ultimately improving both provider and patient experiences.
             </p>
             <div className="about-buttons">
               <button className="btn">Resume</button>
