@@ -8,6 +8,8 @@ import Connectdots from "./components/homepage/connectdots/connectdots.jsx";
 import Carousel from "./components/shared/carousel/carousel.tsx";
 import PortfolioPage from "./components/portfolio/portfoliopage.jsx"; // Portfolio page
 import PortfolioHeader from "./components/portfolio/portfolioheader";
+import { Analytics } from "@vercel/analytics/react";
+
 
 
 function App() {
@@ -48,6 +50,8 @@ function App() {
           />
         </Routes>
         {/* <Footer /> */}
+        <Analytics /> {/* Add this at the bottom */}
+
       </div>
     </Router>
   );
