@@ -25,10 +25,10 @@ function Nav() {
 
       {/* Navigation Menu */}
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="https://drive.google.com/file/d/1e4_0sJroot_Mt_LRlIxCP5WQU5W2ZWPd/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="/">home</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/portfolio">portfolio</a></li>
+        <li><a href="https://drive.google.com/file/d/1e4_0sJroot_Mt_LRlIxCP5WQU5W2ZWPd/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a></li>
       </ul>
     </nav>
   );

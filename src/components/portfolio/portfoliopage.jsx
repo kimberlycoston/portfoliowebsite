@@ -6,47 +6,48 @@ import "./portfoliopage.css";
 const projects = [
   {
     title: "BluePrint",
-    category: "Book",
+    category: "Mobile Application",
     image: "/src/assets/project_card_images/coming_soon.png",
   },
   {
     title: "Shelf Sense",
-    category: "Design system",
+    category: "Mobile Application",
     image: "/src/assets/project_card_images/coming_soon.png",
   },
   {
+    title: "ECG Rhythm Interpretation",
+    category: "Machine Learning",
+    image: "/src/assets/project_card_images/ECG_1.png",
+  },
+  {
     title: "Vein Finder",
-    category: "Side project",
+    category: "Hardware",
     image: "/src/assets/project_card_images/vein_finder1.png",
   },
   {
     title: "RNsight",
-    category: "Product design",
+    category: "Website design",
     image: "/src/assets/project_card_images/RNsight_1.png",
   },
   {
-    title: "AI/VR De-esclation Training for Nurses",
-    category: "Website design",
+    title: "VR De-esclation Training for Nurses",
+    category: "AI",
     image: "/src/assets/project_card_images/VR_demo1.jpg",
   },
-  {
-    title: "ECG Rhythm Interpretation",
-    category: "Speaking event",
-    image: "/src/assets/project_card_images/ECG_1.png",
-  },
+  
   {
     title: "Exploring the Future of Education",
-    category: "Product design",
+    category: "Programming",
     image: "/src/assets/project_card_images/coming_soon.png",
   },
   {
     title: "Exploring the Future of Education: Pt II",
-    category: "Website design",
+    category: "Virtual Reality",
     image: "/src/assets/project_card_images/coming_soon.png",
   },
   {
     title: "Nurse Automated Self-Scheduling",
-    category: "Speaking event",
+    category: "Programming",
     image: "/src/assets/project_card_images/coming_soon.png",
   },
 ];
