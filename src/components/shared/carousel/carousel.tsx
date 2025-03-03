@@ -22,7 +22,7 @@ const projects: Project[] = [
       "A hospital policy chatbot that allows staff to quickly find and reference hospital policies by asking questions, improving efficiency and compliance.",
     // techStack: ["Python"],
     srcURL: "https://github.com/example/passgen",
-    thumbnail: "/src/assets/project_card_images/coming_soon.png",
+    thumbnail: "/coming_soon.png",
   },
   {
     title: "Shelf Sense",
@@ -31,7 +31,7 @@ const projects: Project[] = [
       "A voice-activated hospital supply locator that helps nurses find items quickly using a variety of intuitive inputs.",
     // techStack: ["React", "Node.js", "MongoDB"],
     srcURL: "https://github.com/example/project-manager",
-    thumbnail: "/src/assets/project_card_images/coming_soon.png",
+    thumbnail: "/coming_soon.png",
   },
   {
     title: "Vein Finder",
@@ -40,7 +40,7 @@ const projects: Project[] = [
       "A DIY device designed to enhance vein visibility for IV access.",
     // techStack: ["Next.js", "React", "Stripe", "MongoDB"],
     srcURL: "https://github.com/example/ecommerce-platform",
-    thumbnail: "/src/assets/project_card_images/vein_finder4.png",
+    thumbnail: "/vein_finder4.png",
   },
   {
     title: "RNsight",
@@ -49,7 +49,7 @@ const projects: Project[] = [
       "A nurse pay transparency platform where nurses can anonymously share and compare salaries, promoting pay equity and informed career decisions.",
     // techStack: ["React", "API Integration", "CSS3"],
     srcURL: "https://github.com/example/weather-app",
-    thumbnail: "/src/assets/project_card_images/RNsight_1.png",
+    thumbnail: "/RNsight_1.png",
   },
   {
     title: "AI/VR De-escalation Training for Nurses",
@@ -58,7 +58,7 @@ const projects: Project[] = [
       "A VR training tool that helps healthcare staff practice patient de-escalation techniques with real-time AI feedback.",
     // techStack: ["Vue.js", "JavaScript", "CSS3"],
     srcURL: "https://github.com/example/task-tracker",
-    thumbnail: "/src/assets/project_card_images/VR_demo1.jpg",
+    thumbnail: "/VR_demo1.jpg",
   },
   {
     title: "ECG Rhythm Interpretation",
@@ -67,7 +67,7 @@ const projects: Project[] = [
       "An at-home device designed to recognize ECG rhythm changes through predictive analysis.",
     // techStack: ["Gatsby", "React", "GraphQL"],
     srcURL: "https://github.com/example/portfolio-website",
-    thumbnail: "/src/assets/project_card_images/ECG_1.png",
+    thumbnail: "/ECG_1.png",
   },
 ]
 

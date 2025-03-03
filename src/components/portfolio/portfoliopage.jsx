@@ -7,48 +7,48 @@ const projects = [
   {
     title: "BluePrint",
     category: "Mobile Application",
-    image: "/src/assets/project_card_images/coming_soon.png",
+    image: "/coming_soon.png",
   },
   {
     title: "Shelf Sense",
     category: "Mobile Application",
-    image: "/src/assets/project_card_images/coming_soon.png",
+    image: "/coming_soon.png",
   },
   {
     title: "ECG Rhythm Interpretation",
     category: "Machine Learning",
-    image: "/src/assets/project_card_images/ECG_1.png",
+    image: "/ECG_1.png",
   },
   {
     title: "Vein Finder",
     category: "Hardware",
-    image: "/src/assets/project_card_images/vein_finder1.png",
+    image: "/vein_finder1.png",
   },
   {
     title: "RNsight",
     category: "Website design",
-    image: "/src/assets/project_card_images/RNsight_1.png",
+    image: "/RNsight_1.png",
   },
   {
     title: "VR De-esclation Training for Nurses",
     category: "AI",
-    image: "/src/assets/project_card_images/VR_demo1.jpg",
+    image: "/VR_demo1.jpg",
   },
   
   {
     title: "Exploring the Future of Education",
     category: "Programming",
-    image: "/src/assets/project_card_images/coming_soon.png",
+    image: "/coming_soon.png",
   },
   {
     title: "Exploring the Future of Education: Pt II",
     category: "Virtual Reality",
-    image: "/src/assets/project_card_images/coming_soon.png",
+    image: "/coming_soon.png",
   },
   {
     title: "Nurse Automated Self-Scheduling",
     category: "Programming",
-    image: "/src/assets/project_card_images/coming_soon.png",
+    image: "/coming_soon.png",
   },
 ];
 
