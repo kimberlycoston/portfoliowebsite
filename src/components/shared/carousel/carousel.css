@@ -132,14 +132,11 @@ section {
   }
   
   .carousel-arrow.left {
-    position: relative;
-    padding-bottom: 230px;
-    padding-right: 850px;
+    left: 200px;
   }
   
   .carousel-arrow.right {
-    position: relative;
-    padding-bottom: 230px;
+    right: 100px;
   }
   
   .carousel-arrow svg {
@@ -260,7 +257,7 @@ section {
 }
 
 .glow-on-hover:active {
-    color: #000;
+    color: #000
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
 }
 
