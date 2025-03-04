@@ -21,7 +21,7 @@ const projects: Project[] = [
     description:
       "An at-home device designed to recognize ECG rhythm changes through predictive analysis.",
     // techStack: ["Gatsby", "React", "GraphQL"],
-    srcURL: "https://github.com/example/portfolio-website",
+    srcURL: "https://github.com/kimberlycoston/midtermaipi/tree/master",
     thumbnail: "/ECG_1.png",
   },
   {
