@@ -5,19 +5,19 @@ import "./portfoliopage.css";
 
 const projects = [
   {
-    title: "BluePrint",
-    category: "Mobile Application",
-    image: "/coming_soon.png",
+    title: "ECG Rhythm Interpretation",
+    category: "Machine Learning",
+    image: "/ECG_1.png",
   },
   {
     title: "Shelf Sense",
     category: "Mobile Application",
-    image: "/coming_soon.png",
+    image: "/shelfsense.png",
   },
   {
-    title: "ECG Rhythm Interpretation",
-    category: "Machine Learning",
-    image: "/ECG_1.png",
+    title: "BluePrint",
+    category: "Mobile Application",
+    image: "/coming_soon.png",
   },
   {
     title: "Vein Finder",
@@ -32,9 +32,13 @@ const projects = [
   {
     title: "VR De-esclation Training for Nurses",
     category: "AI",
-    image: "/VR_demo1.jpg",
+    image: "/vr_demo1.png",
   },
-  
+  {
+    title: "Nurse Automated Self-Scheduling",
+    category: "Programming",
+    image: "/coming_soon.png",
+  },
   {
     title: "Exploring the Future of Education",
     category: "Programming",
@@ -43,11 +47,6 @@ const projects = [
   {
     title: "Exploring the Future of Education: Pt II",
     category: "Virtual Reality",
-    image: "/coming_soon.png",
-  },
-  {
-    title: "Nurse Automated Self-Scheduling",
-    category: "Programming",
     image: "/coming_soon.png",
   },
 ];

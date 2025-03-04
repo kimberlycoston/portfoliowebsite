@@ -16,10 +16,19 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "ECG Rhythm Interpretation",
+    subTitle: "Machine Learning | Edge Computing | Data Preprocessing",
+    description:
+      "An at-home device designed to recognize ECG rhythm changes through predictive analysis.",
+    // techStack: ["Gatsby", "React", "GraphQL"],
+    srcURL: "https://github.com/example/portfolio-website",
+    thumbnail: "/ECG_1.png",
+  },
+  {
     title: "BluePrint",
     subTitle: "Retrieval Augmented Generation | Full-stack Development | Database Management",
     description:
-      "A hospital policy chatbot that allows staff to quickly find and reference hospital policies by asking questions, improving efficiency and compliance.",
+      "A hospital policy chatbot that allows staff to quickly find answers to any clinical care question with referenced hospital policies.",
     // techStack: ["Python"],
     srcURL: "https://github.com/example/passgen",
     thumbnail: "/coming_soon.png",
@@ -31,7 +40,7 @@ const projects: Project[] = [
       "A voice-activated hospital supply locator that helps nurses find items quickly using a variety of intuitive inputs.",
     // techStack: ["React", "Node.js", "MongoDB"],
     srcURL: "https://github.com/example/project-manager",
-    thumbnail: "/coming_soon.png",
+    thumbnail: "/shelfsense.png",
   },
   {
     title: "Vein Finder",
@@ -44,7 +53,7 @@ const projects: Project[] = [
   },
   {
     title: "RNsight",
-    subTitle: "UX/UI Design | Web development | User research",
+    subTitle: "UX/UI Design | Web Development | User Research",
     description:
       "A nurse pay transparency platform where nurses can anonymously share and compare salaries, promoting pay equity and informed career decisions.",
     // techStack: ["React", "API Integration", "CSS3"],
@@ -58,16 +67,7 @@ const projects: Project[] = [
       "A VR training tool that helps healthcare staff practice patient de-escalation techniques with real-time AI feedback.",
     // techStack: ["Vue.js", "JavaScript", "CSS3"],
     srcURL: "https://github.com/example/task-tracker",
-    thumbnail: "/VR_demo1.jpg",
-  },
-  {
-    title: "ECG Rhythm Interpretation",
-    subTitle: "Machine Learning | Edge Computing | Data Preprocessing",
-    description:
-      "An at-home device designed to recognize ECG rhythm changes through predictive analysis.",
-    // techStack: ["Gatsby", "React", "GraphQL"],
-    srcURL: "https://github.com/example/portfolio-website",
-    thumbnail: "/ECG_1.png",
+    thumbnail: "/vr_demo1.png",
   },
 ]
 

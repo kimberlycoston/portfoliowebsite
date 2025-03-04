@@ -11,9 +11,9 @@ const PortfolioHeader = () => {
         <h1>
           portfolio<span>.</span>
         </h1>
-        <p>ideas, innovation, and execution • see what I've been building.</p>
+        <p>ideas, innovation, and execution. </p>
         <p className="subtext">
-          every project starts with a problem worth solving. here's how I'm building solutions to make healthcare smarter, faster, and more human.
+          every project starts with a problem worth solving.<p></p> here's how I'm building solutions to make healthcare smarter, faster, and more human.
         </p>
       </div>
       {/* Radio Button Component */}
@@ -29,7 +29,7 @@ const PortfolioHeader = () => {
             <label className="label">
               <div className="back-side"></div>
               <input type="radio" id="value-2" name="value-radio" value="value-2" />
-              <span className="text">i'll read every word</span>
+              <span className="text">i enjoy reading novels</span>
               <span className="bottom-line"></span>
             </label>
 
