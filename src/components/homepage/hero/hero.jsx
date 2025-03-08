@@ -15,6 +15,12 @@ const Hero = () => {
     setDividerPosition(48); // Reset to default position when the mouse leaves
   };
 
+  // Calculate the translation offset for the images
+  const calculateTranslateX = (position) => {
+    // Adjust the multiplier to control the amount of movement
+    return (position - 48) * 0.2; // Moves opposite to the mouse direction
+  };
+
   return (
     <div
       className="hero-container"
@@ -22,7 +28,6 @@ const Hero = () => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="hero-wrapper scaled-wrapper centered-wrapper">
-        
         {/* Nurse Objects (Left Background) */}
         <img
           src="/nurse-objects.png"
@@ -30,7 +35,7 @@ const Hero = () => {
           className="background-image nurse-objects"
           style={{
             opacity: dividerPosition === 48 ? 1 : Math.min(1, (dividerPosition - 20) / 55), // Full opacity when default
-            transition: 'opacity 0.5s ease-in-out',
+            transition: 'opacity 0.5s ease-in-out, transform 0.5s ease-in-out',
           }}
         />
 
@@ -41,7 +46,7 @@ const Hero = () => {
           className="background-image innovator-objects"
           style={{
             opacity: dividerPosition === 48 ? 1 : Math.min(1, (80 - dividerPosition) / 55), // Full opacity when default
-            transition: 'opacity 0.5s ease-in-out',
+            transition: 'opacity 0.5s ease-in-out, transform 0.5s ease-in-out',
           }}
         />
 
@@ -57,6 +62,10 @@ const Hero = () => {
             src="/nurse_left_alone.png"
             alt="Nurse Headshot"
             className="hero-image"
+            style={{
+              transform: `translateX(${calculateTranslateX(dividerPosition)}%)`, // Move opposite to mouse
+              transition: 'transform 0.5s ease-in-out',
+            }}
           />
         </div>
 
@@ -72,6 +81,10 @@ const Hero = () => {
             src="/innovator_right_alone.png"
             alt="Innovator Headshot"
             className="hero-image"
+            style={{
+              transform: `translateX(${calculateTranslateX(dividerPosition)}%)`, // Move opposite to mouse
+              transition: 'transform 0.5s ease-in-out',
+            }}
           />
         </div>
 
@@ -84,6 +97,9 @@ const Hero = () => {
           }}
         >
           nurse
+          <div className="additional-sentence">
+            I care for patients and the systems & people that support them.
+          </div>
         </div>
 
         {/* Innovator Text (Right) */}
@@ -95,6 +111,9 @@ const Hero = () => {
           }}
         >
           innovator
+          <div className="additional-sentence">
+            I solve problems at the intersection of care, cost, & efficiency.
+          </div>
         </div>
       </div>
     </div>

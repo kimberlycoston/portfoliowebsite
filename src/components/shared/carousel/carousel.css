@@ -330,3 +330,15 @@ section {
     padding-bottom: 50px;
   }
 } */
+
+.techstack {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.techstack-logo {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+  object-fit: contain;
+}

@@ -4,15 +4,25 @@ import React, { useState, useCallback, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Card } from "../ui/carousel-card"
 import "./carousel.css"
+// import techLogos from "./techstack";
 
 interface Project {
   title: string
   subTitle: string
   description: string
-  // techStack: string[]
+  techStack: string[]
   srcURL: string
   thumbnail: string
 }
+
+{/* <div className="tech-stack">
+  {projects.techStack.map((tech, i) => (
+    <div key={i} className="tech-item">
+      <img src={techLogos[tech]} alt={tech} className="tech-logo" />
+      <span>{tech}</span>
+    </div>
+  ))}
+</div> */}
 
 const projects: Project[] = [
   {
@@ -20,7 +30,7 @@ const projects: Project[] = [
     subTitle: "Machine Learning | Edge Computing | Data Preprocessing",
     description:
       "An at-home device designed to recognize ECG rhythm changes through predictive analysis.",
-    // techStack: ["Gatsby", "React", "GraphQL"],
+    techStack: ["Pandas", "React", "GraphQL"],
     srcURL: "https://github.com/kimberlycoston/midtermaipi/tree/master",
     thumbnail: "/ECG_1.png",
   },
@@ -29,7 +39,7 @@ const projects: Project[] = [
     subTitle: "Retrieval Augmented Generation | Full-stack Development | Database Management",
     description:
       "A hospital policy chatbot that allows staff to quickly find answers to any clinical care question with referenced hospital policies.",
-    // techStack: ["Python"],
+    techStack: ["Python"],
     srcURL: "https://github.com/example/passgen",
     thumbnail: "/coming_soon.png",
   },
@@ -38,7 +48,7 @@ const projects: Project[] = [
     subTitle: "Database Management | Full-stack Development | Cloud Integration",
     description:
       "A voice-activated hospital supply locator that helps nurses find items quickly using a variety of intuitive inputs.",
-    // techStack: ["React", "Node.js", "MongoDB"],
+    techStack: ["Pandas", "Node.js", "MongoDB"],
     srcURL: "https://github.com/example/project-manager",
     thumbnail: "/shelfsense.png",
   },
@@ -47,7 +57,7 @@ const projects: Project[] = [
     subTitle: "Light & Optics Experimentation | Rapid Prototyping | Arduino Development",
     description:
       "A DIY device designed to enhance vein visibility for IV access.",
-    // techStack: ["Next.js", "React", "Stripe", "MongoDB"],
+    techStack: ["Next.js", "React", "Stripe", "MongoDB"],
     srcURL: "https://github.com/example/ecommerce-platform",
     thumbnail: "/vein_finder4.png",
   },
@@ -56,7 +66,7 @@ const projects: Project[] = [
     subTitle: "UX/UI Design | Web Development | User Research",
     description:
       "A nurse pay transparency platform where nurses can anonymously share and compare salaries, promoting pay equity and informed career decisions.",
-    // techStack: ["React", "API Integration", "CSS3"],
+    techStack: ["React", "API Integration", "CSS3"],
     srcURL: "https://github.com/example/weather-app",
     thumbnail: "/RNsight_1.png",
   },
@@ -65,7 +75,7 @@ const projects: Project[] = [
     subTitle: "LLM application | Project Management | User Research",
     description:
       "A VR training tool that helps healthcare staff practice patient de-escalation techniques with real-time AI feedback.",
-    // techStack: ["Vue.js", "JavaScript", "CSS3"],
+    techStack: ["Vue.js", "JavaScript", "CSS3"],
     srcURL: "https://github.com/example/task-tracker",
     thumbnail: "/vr_demo1.png",
   },
@@ -157,14 +167,13 @@ function ProjectCard({
         <h5 className="subtitle">{project.subTitle}</h5>
         <p className="project-description">{project.description}</p>
         <div className="mt-4 flex gap-2 flex-wrap">
-          {/* {project.techStack.map((tech, i) => ( */}
-            {/* <span */}
-              {/* key={i} */}
-              {/* className="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full hover:bg-gray-300 transition-colors" */}
-            {/* > */}
-              {/* {tech} */}
-            {/* </span> */}
-          {/* ))} */}
+          {project.techStack.map((tech, i) => (
+            <span
+              key={i}
+              className="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full hover:bg-gray-300 transition-colors">
+              {tech}
+            </span>
+          ))}
         </div>
         <div className="bottom-button-container">
           <a href={project.thumbnail} className="glow-on-hover" target="_blank" rel="noopener noreferrer">
