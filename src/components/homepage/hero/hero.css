@@ -67,7 +67,8 @@
 
 .hero-text {
   position: absolute;
-  color: white;
+  /* color: white; */
+  color: #1a1a1a;
   font-size: 100px;
   font-weight: 500;
   top: 50%;
@@ -104,7 +105,8 @@
 /* Additional Sentence Styling */
 .additional-sentence {
   font-size: 1.4rem;
-  color: whitesmoke;
+  /* color: whitesmoke; */
+  color: #1f1f1f;
   font-weight: 300;
   margin-top: none; /* Reduced space between main text and additional sentence */
   opacity: 1; /* Inherits opacity from parent */
@@ -115,7 +117,8 @@
 /* Nurse Text (Left) */
 .nurse-text {
   position: absolute;
-  color: white;
+  /* color: white; */
+  color: #4c64de;
   font-size: 3.5rem;
   font-weight: 400;
   top: 50%;
@@ -133,7 +136,8 @@
 /* Innovator Text (Right) */
 .innovator-text {
   position: absolute;
-  color: white;
+  /* color: white; */
+  color: #4c64de;
   font-size: 4rem;
   font-weight: 400;
   top: 50%;

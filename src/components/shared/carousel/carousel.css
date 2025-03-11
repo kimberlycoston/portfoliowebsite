@@ -16,7 +16,7 @@ section {
   .featured-projects {
     font-size: 2rem;
     font-weight: bold;
-    color: white;
+    color: #4c64de;
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
     font-size: 38px;
     position: relative;
@@ -40,34 +40,33 @@ section {
   /* } */
   
   .carousel-wrapper {
-    padding-top: 0; /* Reduce or remove top padding */
-    margin-top: -50px; /* Adjust this value to decrease the space */
+    padding-top: 0;
+    margin-top: -50px;
     perspective: 100em;
     perspective-origin: 50% 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    /* overflow: hidden; */
     padding-bottom: 20px;
     width: 100%;
     height: 500px;
-  }
+}
   
-  .carousel-content {
-    position: absolute;
-    left: 50%;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease;
-    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
-    line-height: 20px;
-  }
+.carousel-content {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+  line-height: 20px;
+}
   
   .project-card {
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
     border-radius: 8px;
     padding: 1rem;
     width: 300px;
@@ -85,7 +84,7 @@ section {
   
   .project-card.focused {
     filter: none;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
     pointer-events: auto;
   }
   
@@ -99,13 +98,15 @@ section {
     display: flex;
     gap: 10px;
     bottom: -10px;
+    left: 50%; /* Center the nav dots */
+    transform: translateX(-50%); /* Adjust for perfect centering */
     cursor: pointer;
-  }
+}
   
   .nav-dot {
     width: 15px;
     height: 15px;
-    background: #fff;
+    background: #4c64de;
     border: 0px solid rgba(34, 34, 34, 0.45);
     border-radius: 50%;
     transition: all 0.4s ease;
@@ -113,31 +114,33 @@ section {
   }
   
   .nav-dot.focused {
-    background: black;
+    background: #f9ae37;
     transform: scale(1.4);
   }
   
   .carousel-arrow {
     position: absolute;
-    top: 50%;
+    top: 100%; /* Move arrows closer to the bottom */
     transform: translateY(-50%);
     cursor: pointer;
-    color: black;
+    color: #4c64de;
     z-index: 10;
     background: transparent;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .carousel-arrow.left {
-    left: 200px;
-  }
-  
-  .carousel-arrow.right {
-    right: 100px;
-  }
+}
+
+.carousel-arrow.left {
+    left: 50%; /* Center the left arrow horizontally */
+    transform: translateX(-250%) translateY(-50%); /* Adjust to align with the left side of the nav dots */
+}
+
+.carousel-arrow.right {
+    right: 50%; /* Center the right arrow horizontally */
+    transform: translateX(250%) translateY(-50%); /* Adjust to align with the right side of the nav dots */
+}
   
   .carousel-arrow svg {
     width: 36px;
@@ -146,7 +149,7 @@ section {
   
   .project-thumbnail {
     width: 100%;
-    height: 150px;
+    height: 130px;
     object-fit: contain;
     object-position: center;
     margin-top: none;
@@ -161,19 +164,23 @@ section {
   
   .project-content {
     flex-grow: 1;
+    color: #2a2a2a;
     display: flex;
     flex-direction: column;
   }
   
   .project-description {
     flex-grow: 1;
+    color: #2a2a2a;
     overflow: hidden;
     margin-top: -10px;
+    margin-bottom: none;
+    padding-bottom: none;
   }
   
   .title {
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
-    color: black;
+    color: #4c64de;
     font-size: 20px;
     margin-bottom: -10px;
 
@@ -181,7 +188,7 @@ section {
 
   .subTitle {
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
-    color: black;
+    color: #2a2a2a;
     font-size: 20px;
     margin-bottom: 0;
     padding: 0;
@@ -210,8 +217,8 @@ section {
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
     font-size: 14px;
     text-decoration: none;
-    color: #fff;
-    background-color: black;
+    color: #f9ae37;
+    background-color: #f9ae37;
     padding: 8px 16px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
@@ -226,8 +233,8 @@ section {
   .glow-on-hover {
     padding: 8px 16px;
     border: none;
-    color: #fff;
-    background: #111;
+    color: #ffffff; /* Change text color to #4c64de */
+    /* background: #fff; */
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -242,7 +249,7 @@ section {
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, black, gray, #7a00ff, #fff, #7a00ff, black, #7a00ff);
+    background: linear-gradient(45deg, black, #00a2c1, #4c64de, #fff, #4c64de, black, #4c64de);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -257,7 +264,7 @@ section {
 }
 
 .glow-on-hover:active {
-    color: #000
+    color: #000;
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -275,7 +282,7 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #111;
+    background: #4c64de; /* Change background color to #4c64de */
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -334,11 +341,20 @@ section {
 .techstack {
   display: flex;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .techstack-logo {
-  width: 30px; /* Adjust size as needed */
+  width: 25px; /* Adjust size as needed */
   height: auto;
   object-fit: contain;
+}
+
+.techstack-label {
+  font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+  /* font-size: 14px; */
+  color: #2a2a2a; /* Adjust the color to match your design */
+  margin-right: 10px; /* Add some spacing between the label and the logos */
+  align-self: center; /* Vertically align the label with the logos */
 }

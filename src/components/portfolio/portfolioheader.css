@@ -21,11 +21,11 @@
     color: #333;
     margin: 0;
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
-    color: white;
+    color: #4c64de;
   }
   
   .headliner h1 span {
-    color: white;
+    color: #4c64de;
     
   }
   
@@ -33,14 +33,14 @@
     font-size: 20px;
     margin-top: 10px;
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
-    color: white;
+    color: #4c64de;
   }
   
   .headliner .subtext {
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
-    color: whitesmoke;
+    color: #2a2a2a;
   }
   
   .skewed {
@@ -66,7 +66,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(249, 174, 55, 0.8); /* Slightly opaque background */
   padding: 8px;
   border-radius: 8px;
   overflow: hidden;
@@ -80,14 +80,14 @@
 .radio-input .label {
   width: 70px;
   height: 50px;
-  background-color: #2a2a2a;
+  background-color: #4c64de;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 8px 6px;
-  border-top: 1px solid #383838;
+  border-top: 1px solid #ffebc8;
   transition: all 0.1s linear;
   position: relative;
   z-index: 2;
@@ -97,7 +97,7 @@
   position: absolute;
   top: -10px;
   left: 0px;
-  background-color: #2a2a2a;
+  background-color: #4c64de;
   border-radius: 4px 4px 2px 2px;
   width: 100%;
   height: 14px;
@@ -118,13 +118,13 @@
   transform: perspective(200px) rotateX(-18deg);
   transform-origin: 50% 40%;
   box-shadow: inset 0px -20px 15px 0px rgba(0, 0, 0, 0.5);
-  border-top: 1px solid #8e44ad;
+  border-top: 1px solid #4c64de;
   margin-top: 6px;
   border-radius: 0 0 4px 4px;
 }
 
 .label .text {
-  color: whitesmoke;
+  color: #ffebc8;
   font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
 
   font-size: 12px;
@@ -138,9 +138,9 @@
 }
 
 .label input[type="radio"]:checked + .text {
-  color: #8e44ad;
+  color: #f9ae37;
   text-shadow:
-    0px 0px 8px #8e44ad,
+    0px 0px 8px #f9ae37,
     1px 1px 2px rgb(0, 0, 0, 1);
 }
 
@@ -148,15 +148,15 @@
   width: 100%;
   height: 4px;
   border-radius: 999px;
-  background-color: #2a2a2a;
-  box-shadow: 0 0 3px 0px rgb(19, 19, 19);
-  border-top: 1px solid #383838;
+  background-color: #ffebc8;
+  box-shadow: 0 0 1px 0px rgb(19, 19, 19);
+  border-top: 1px solid #f9ae37;
   transition: all 0.1s linear;
 }
 
 .label:has(input[type="radio"]:checked) .bottom-line {
   background-color: #1a1a1a;
-  border-top: 1px solid #8e44ad;
+  border-top: 1px solid #ffebc8;
 }
 
   

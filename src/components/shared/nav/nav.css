@@ -1,36 +1,38 @@
 nav {
     width: 100%;
-    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    background-color: #4c64de; /* Background color */
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100; 
+    z-index: 100;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center; /* Vertically center items */
+    padding: 0 20px; /* Add padding to the sides */
+ 
+    transition: background-color 0.3s ease; /* Smooth transition for background */
   }
-
-  nav.scrolled {
-    background-color: #9c36eb; /* Opaque when scrolled */
-    height: 100px;
-    mask-image: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0) 0%,   /* Fully transparent at 0% */
-        #ffffff 10%,                /* Opaque starts earlier at 10% */
-        #ffffff 90%,                /* Opaque ends later at 90% */
-        rgba(255, 255, 255, 0) 100% /* Fully transparent again at 100% */
-    );
-    transition: mask-image 0.9s ease;
-}
-
-  nav.scrolled ul {
-    text-align: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
-  }
-
   
+  nav.scrolled {
+    background-color: #4c64de; /* Same color when scrolled */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow when scrolled */
+  }
+  
+  /* Logo Styles */
+  .logo a {
+    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+    color: #ffebc8; /* Text color */
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Navigation Menu Styles */
   nav ul {
-    text-align: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    display: flex;
+    margin: 0;
+    padding-right: 20px;
+    list-style: none;
   }
   
   nav ul li {
@@ -40,14 +42,17 @@ nav {
   nav ul li a {
     padding: 18px;
     font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
-    color: whitesmoke;
+    color: #ffebc8; /* Text color */
     font-size: 18px;
     text-decoration: none;
     display: block;
+    transition: color 0.3s ease; /* Smooth transition for text color */
   }
   
   nav ul li a:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
-    background: rgba(255, 255, 255, 0.1);
-    color: whitesmoke;
+    color: #f9ae37; /* Hover text color */
+  }
+
+  nav ul li a.active {
+    color: #f9ae37; /* Hover text color */
   }

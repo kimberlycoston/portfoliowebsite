@@ -78,7 +78,7 @@ const Hero = () => {
           }}
         >
           <img
-            src="/innovator_right_alone.png"
+            src="/innovator_alone_right.png"
             alt="Innovator Headshot"
             className="hero-image"
             style={{

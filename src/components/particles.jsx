@@ -34,7 +34,8 @@ const ParticlesComponent = (props) => {
     () => ({
       background: {
         color: {
-          value: "#9c36eb",
+          value: "#FAF9F6",
+          // the background color is 9c36eb purple
         },
       },
       fpsLimit: 120,
@@ -61,10 +62,11 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         color: {
-          value: "#FFFFFF",
-        },
+          value: ["#f9ae37", "#4c64de", "#ff4631", "#ffebc8", "#00a2c1"], // Array of colors
+          // value: "#FFFFFF",
+      },
         links: {
-          color: "#FFFFFF",
+          color: "#1a1a1a1a",
           distance: 150,
           enable: true,
           opacity: 0.3,
@@ -84,7 +86,7 @@ const ParticlesComponent = (props) => {
           density: {
             enable: true,
           },
-          value: 150,
+          value: 120,
         },
         opacity: {
           value: 1.0,
