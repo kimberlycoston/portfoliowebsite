@@ -4,7 +4,7 @@ import Nav from "./components/shared/nav/nav.jsx";
 // import Footer from "./components/shared/footer/footer.jsx";
 import Hero from "./components/homepage/hero/hero.jsx";
 import About from "./components/about/about.jsx";
-import Connectdots from "./components/homepage/connectdots/connectdots.jsx";
+// import Connectdots from "./components/homepage/connectdots/connectdots.jsx";
 import Carousel from "./components/shared/carousel/carousel.tsx";
 import PortfolioPage from "./components/portfolio/portfoliopage.jsx"; // Portfolio page
 import PortfolioHeader from "./components/portfolio/portfolioheader";
@@ -30,7 +30,7 @@ function App() {
               <>
                 <Hero />
                 <Carousel />
-                <Connectdots />
+                {/* <Connectdots /> */}
               </>
             }
           />

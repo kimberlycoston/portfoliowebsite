@@ -2,14 +2,13 @@
   position: relative;
   padding-top: none;
   width: 100%;
-  height: 100vh;
+  height: 80vh; /* Adjusted height to match the images */
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end; /* Align content to the bottom */
   padding-bottom: 0;
   margin: 0;
-  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.2); /* Subtle bottom shadow */
 }
 
 .hero-wrapper {
@@ -19,7 +18,45 @@
   max-width: 100%;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end; /* Align content to the bottom */
+}
+
+.hero-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: clip-path 0.3s ease-in-out;
+  margin: none;
+  padding: none;
+  display: flex;
+  z-index: 50;
+  align-items: flex-end; /* Align images to the bottom */
+  /* border-bottom: 2px solid #000000; Add divider line directly at the bottom of the images */
+}
+
+.hero-image {
+  width: 100%;
+  height: auto; /* Adjust height to auto for better scaling */
+  max-height: 80vh; /* Limit the maximum height of the images */
+  object-fit: contain; /* Changed from cover to contain to avoid cropping */
+  object-position: bottom center; /* Align images to the bottom */
+}
+
+/* Background Images (Nurse & Innovator Objects) */
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: auto; /* Adjust height to auto for better scaling */
+  max-height: 80vh; /* Limit the maximum height of the background images */
+  object-fit: contain; /* Ensures proper placement */
+  top: auto; /* Remove top positioning */
+  bottom: 0; /* Align to the bottom */
+  left: 0;
+  z-index: 10; /* Ensures it's behind everything */
+  transition: opacity 0.5s ease-in-out;
 }
 
 .hero-description {
@@ -52,13 +89,16 @@
   transition: clip-path 0.3s ease-in-out;
   margin: none;
   padding: none;
+  display: flex;
+  align-items: flex-end; /* Align images to the bottom */
 }
 
 .hero-image {
   width: 100%;
-  height: 100%;
+  height: auto; /* Adjust height to auto for better scaling */
+  max-height: 80vh; /* Limit the maximum height of the images */
   object-fit: contain; /* Changed from cover to contain to avoid cropping */
-  object-position: top center; /* Ensures the top of the head stays visible */
+  object-position: bottom center; /* Align images to the bottom */
 }
 
 .smooth-transition {
@@ -67,9 +107,8 @@
 
 .hero-text {
   position: absolute;
-  /* color: white; */
   color: #1a1a1a;
-  font-size: 100px;
+  font-size: clamp(2rem, 10vw, 100px); /* Dynamic font size */
   font-weight: 500;
   top: 50%;
   transform: translateY(-50%);
@@ -81,12 +120,15 @@
 }
 
 /* Background Images (Nurse & Innovator Objects) */
+/* Background Images (Nurse & Innovator Objects) */
 .background-image {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto; /* Adjust height to auto for better scaling */
+  max-height: 80vh; /* Limit the maximum height of the background images */
   object-fit: contain; /* Ensures proper placement */
-  top: 0;
+  top: auto; /* Remove top positioning */
+  bottom: 0; /* Align to the bottom */
   left: 0;
   z-index: 0; /* Ensures it's behind everything */
   transition: opacity 0.5s ease-in-out;
@@ -104,8 +146,7 @@
 
 /* Additional Sentence Styling */
 .additional-sentence {
-  font-size: 1.4rem;
-  /* color: whitesmoke; */
+  font-size: clamp(1rem, 3vw, 1.4rem); /* Dynamic font size */
   color: #1f1f1f;
   font-weight: 300;
   margin-top: none; /* Reduced space between main text and additional sentence */
@@ -117,39 +158,35 @@
 /* Nurse Text (Left) */
 .nurse-text {
   position: absolute;
-  /* color: white; */
   color: #4c64de;
-  font-size: 3.5rem;
+  font-size: clamp(1rem, 8vw, 100px); /* Dynamic font size */
   font-weight: 400;
   top: 50%;
-  left: 5%;
+  left: 2%;
   transform: translateY(-50%);
   transition: opacity 0.3s ease;
   pointer-events: none;
   font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
-  font-size: 100px;
   margin-top: -100px;
   text-align: justify; /* Align text to the left */
-  max-width: 30%;
+  max-width: 25%;
 }
 
 /* Innovator Text (Right) */
 .innovator-text {
   position: absolute;
-  /* color: white; */
   color: #4c64de;
-  font-size: 4rem;
+  font-size: clamp(1rem, 8vw, 100px); /* Dynamic font size */
   font-weight: 400;
   top: 50%;
-  right: 5%;
+  right: 8%;
   transform: translateY(-50%);
   transition: opacity 0.3s ease;
   pointer-events: none;
   font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
-  font-size: 100px;
   margin-top: -100px;
   text-align: justify; /* Align text to the right */
-  max-width: 30%;
+  max-width: 25%;
 }
 
 /* Ensure smooth transitions for all moving elements */
@@ -166,7 +203,7 @@
 /* Ensure the images are positioned correctly */
 .hero-image {
   width: 100%;
-  height: 100%;
+  height: auto; /* Adjust height to auto for better scaling */
   object-fit: contain; /* Ensures the image is fully visible */
-  object-position: top center; /* Keeps the top of the head visible */
+  object-position: bottom center; /* Keeps the bottom of the image visible */
 }
