@@ -24,7 +24,7 @@ const About = () => {
             </p>
             <p>Rather than accepting these challenges as the norm, I sought solutions—turning frustration into innovation.</p>
             <p>
-            Now, as a Master’s of Engineering student in Design & Technology Innovation at Duke,
+            Now, as a Master’s of Engineering student in Design & Technology Innovation at Duke University,
             I’m expanding my ability to design scalable solutions that address real clinical pain points.
             </p>
             <p>

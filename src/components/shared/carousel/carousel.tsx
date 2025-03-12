@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Card } from "../ui/carousel-card"
 import "./carousel.css"
 import techLogos from "./techstack";
+import { Link } from "react-router-dom";
 
 interface Project {
   title: string
@@ -118,8 +119,8 @@ export default function Projects() {
 
   return (
     <section className="carousel-section" id="featured-projects">
-      <h2 className="featured-projects">featured projects</h2>
-      {/* <h2 className="featured-projects text-outline">featured projects</h2> */}
+      {/* <h2 className="featured-projects">featured projects</h2> */}
+      <h2 className="featured-projects text-outline">FEATURED PROJECTS</h2>
       <div className="carousel-wrapper">
         <div
           className="carousel-content"
@@ -170,6 +171,9 @@ function ProjectCard({
   rotation: number
   isFocused: boolean
 }) {
+  // Define the route for each project
+  const projectRoute = `/ecg-rhythm-interpretation`; // Update this for each project
+
   return (
     <Card
       className={`project-card ${isFocused ? "focused" : ""}`}
@@ -185,7 +189,7 @@ function ProjectCard({
         <h5 className="subtitle">{project.subTitle}</h5>
         <p className="project-description">{project.description}</p>
         <div className="techstack">
-        <span className="techstack-label">TechStack:</span> {/* Add this line */}
+          <span className="techstack-label">TechStack:</span>
           {project.techStack.map((tech, i) => (
             <img
               key={i}
@@ -196,14 +200,15 @@ function ProjectCard({
           ))}
         </div>
         <div className="bottom-button-container">
-          <a href={project.thumbnail} className="glow-on-hover" target="_blank" rel="noopener noreferrer">
+          {/* Replace the <a> tag with a <Link> component */}
+          <Link to={projectRoute} className="glow-on-hover">
             View Project
-          </a>
+          </Link>
           <a href={project.srcURL} className="glow-on-hover" target="_blank" rel="noopener noreferrer">
             View Source Code
           </a>
         </div>
       </div>
     </Card>
-  )
+  );
 }

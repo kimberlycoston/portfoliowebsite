@@ -1,0 +1,55 @@
+.case-study-container {
+    font-family: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+    /* background-color: #faf9f6; Portfolio background color */
+    z-index: 1000;
+  }
+  
+  .case-study-section {
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000; /* Force text color to black */
+  }
+  
+  p {
+    color: #000; /* Force text color to black */
+    opacity: 1 !important; /* Force visibility */
+    visibility: visible !important; /* Force visibility */
+  }
+  
+  .cursor {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }

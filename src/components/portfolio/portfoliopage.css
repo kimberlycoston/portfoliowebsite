@@ -38,8 +38,8 @@
 .portfolio-image {
   width: calc(100% - 5px); /* Keeps the width inside the padding */
   height: 200px;
-  padding: 5px 5px 0;
-  object-fit: cover;
+  padding: 15px 10px 0;
+  object-fit: contain;
   display: block;
   margin: 0 auto;
   border-radius: 1rem;

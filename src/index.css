@@ -5,7 +5,7 @@
 
 html {
   height:100%;
-  background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
+  /* background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%); */
 }
 
 html, body {
@@ -21,7 +21,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; /* Ensure it stays below other content */
+  z-index: -1; /* Ensure it stays below other content */
 }
 
 .text-outline {

@@ -23,7 +23,7 @@ function Nav() {
     <nav>
       {/* Website Portfolio Logo on the Far Left */}
       <div className="logo">
-        <a href="/">kc.</a> {/* Replace with your logo or image */}
+        <a href="/">k.coston</a> {/* Replace with your logo or image */}
       </div>
 
       {/* Navigation Menu Aligned to the Right */}

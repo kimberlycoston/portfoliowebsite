@@ -48,7 +48,7 @@
     width: 100%;
     height: .55px; /* Adjust height as needed */
     background-color: white; /* Adjust color to match your design */
-    background: linear-gradient(to top, transparent, #8e44ad);
+    background: linear-gradient(to top, transparent, #4c64de);
     transform-origin: bottom;
     top: -100px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
